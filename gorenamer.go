@@ -9,14 +9,14 @@ import (
 )
 
 func main() {
-	folder := os.Args[1]
-	oldName := os.Args[2]
-	newName := ""
-
-	if folder == "info" {
+	if os.Args[1] == "info" {
 		fmt.Println("./gorenamer [folder of the files] [pattern to find] [replace text]")
 		fmt.Println("Rename all the files found on the folder, replacing the found pattern with the replace text provided")
 	}
+
+	folder := os.Args[1]
+	oldName := os.Args[2]
+	newName := ""
 
 	if len(os.Args[1:]) < 2 {
 		fmt.Printf("ERROR: Please fill all the arguments")
