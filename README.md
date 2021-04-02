@@ -1,6 +1,10 @@
 # What is this?
 This is a simple bulk renamer made with golang
 
+# How to install?
+Basically run:
+- $ go build gorenamer.go
+
 # How does it work?
 The user writes in their cmd which folder the files to be renamed are, which part of the file name is to be renamed and what is going to be renamed to. For an example:
 

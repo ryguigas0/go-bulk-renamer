@@ -12,6 +12,7 @@ func main() {
 	if os.Args[1] == "info" {
 		fmt.Println("./gorenamer [folder of the files] [pattern to find] [replace text]")
 		fmt.Println("Rename all the files found on the folder, replacing the found pattern with the replace text provided")
+		return
 	}
 
 	folder := os.Args[1]
